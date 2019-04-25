@@ -12,6 +12,7 @@
 		FA2B9BB4227226BC00F4D3C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA2B9BB3227226BC00F4D3C9 /* Assets.xcassets */; };
 		FA2B9BB7227226BC00F4D3C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2B9BB5227226BC00F4D3C9 /* LaunchScreen.storyboard */; };
 		FA2B9BBF22722CF100F4D3C9 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2B9BBE22722CF100F4D3C9 /* TableViewController.swift */; };
+		FA2B9BC122722EE100F4D3C9 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = FA2B9BC022722EE100F4D3C9 /* start.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FA2B9BB6227226BC00F4D3C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA2B9BB8227226BC00F4D3C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA2B9BBE22722CF100F4D3C9 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		FA2B9BC022722EE100F4D3C9 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				FA2B9BB3227226BC00F4D3C9 /* Assets.xcassets */,
 				FA2B9BB5227226BC00F4D3C9 /* LaunchScreen.storyboard */,
 				FA2B9BB8227226BC00F4D3C9 /* Info.plist */,
+				FA2B9BC022722EE100F4D3C9 /* start.txt */,
 			);
 			path = "Word Scramble";
 			sourceTree = "<group>";
@@ -123,6 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA2B9BB7227226BC00F4D3C9 /* LaunchScreen.storyboard in Resources */,
+				FA2B9BC122722EE100F4D3C9 /* start.txt in Resources */,
 				FA2B9BB4227226BC00F4D3C9 /* Assets.xcassets in Resources */,
 				FA2B9BB2227226BA00F4D3C9 /* Main.storyboard in Resources */,
 			);
