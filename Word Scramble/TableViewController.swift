@@ -25,6 +25,8 @@ class TableViewController: UITableViewController {
         if allWords.isEmpty {
             allWords = ["silkworm"]
         }
+        
+        startGame()
     }
 
     // MARK: - Table view data source
@@ -37,6 +39,12 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 0
+    }
+    
+    func startGame() {
+        title = allWords.randomElement()
+        usedWords.removeAll(keepingCapacity: true)
+        tableView.reloadData()
     }
 
 }
