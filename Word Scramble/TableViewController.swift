@@ -88,15 +88,34 @@ class TableViewController: UITableViewController {
         }
     }
 
+    //Check input word whether all the letters in the array word
     func isPossible(word: String) -> Bool {
+        guard var tempWord = title?.lowercased() else {
+            return false
+        }
+        
+        for letter in word {
+            if let position = tempWord.firstIndex(of: letter) {
+                tempWord.remove(at: position)
+            } else {
+                return false
+            }
+        }
+        
         return true
     }
     
+    //Check input word used or not
     func isOriginal(word: String) -> Bool {
-        return true
+        return !usedWords.contains(word)
     }
     
+    //Check input word real or not
     func isReal(word: String) -> Bool {
-        return true
+        let checker = UITextChecker()
+        let range = NSRange(location: 0, length: word.utf16.count)
+        let mispelledRange = checker.rangeOfMisspelledWord(in: word, range: range, startingAt: 0, wrap: false, language: "en")
+        
+        return mispelledRange.location == NSNotFound
     }
 }
