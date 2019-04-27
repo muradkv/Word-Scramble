@@ -105,6 +105,10 @@ class TableViewController: UITableViewController {
             return false
         }
         
+        if word == tempWord {
+            return false 
+        }
+        
         for letter in word {
             if let position = tempWord.firstIndex(of: letter) {
                 tempWord.remove(at: position)
